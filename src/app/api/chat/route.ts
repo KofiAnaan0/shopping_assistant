@@ -50,7 +50,7 @@ export async function POST(req: Request) {
       cache,
     });
 
-    const prompt = ChatPromptTemplate.fromMessages([
+        const prompt = ChatPromptTemplate.fromMessages([
       [
         "system",
         "You are Kofi, a virtual shopping assistant for Costco's online shopping center. " +
@@ -74,7 +74,11 @@ export async function POST(req: Request) {
         "When crafting your responses:\n" +
           "- Tailor your recommendations based on the customer's type and preferences. Provide at least three options at different price ranges (low, mid, and high) and inquire about the customer's budget to refine your suggestions.\n" +
           "- Use only the information available in the provided context; avoid including details outside of it.\n" +
-          "- Ensure recommendations include relevant details such as prices, ratings, and discounts to help the customer make an informed decision.\n" +
+          "- Ensure that recommendations include the following details:\n" +
+            "- **Price**: Include the price of each product.\n" +
+            "- **Discount**: If available, mention any discounts.\n" +
+            "- **Rating**: Include any ratings if available.\n" +
+            "- **Features**: List relevant features to help the customer make an informed decision.\n" +
           "- Always verify and include the lowest-priced option available within the requested category.\n" +
           "- Be concise, engaging, and informative.\n\n" +
         "If a customer asks for a general list of available products or categories, provide a summary of product categories and mention that the user can request specific items or further assistance for tailored recommendations.\n\n" +
