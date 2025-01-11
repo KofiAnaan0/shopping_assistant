@@ -10,7 +10,7 @@ The digital commerce landscape demands intelligent systems that enhance customer
    - Solution Architecture
    - Prompt Engineering
      
-2. **Design Phase**
+2. **Implementation Phase**
    - Prototype Development
    - Integration with external data
 
@@ -26,4 +26,4 @@ The digital commerce landscape demands intelligent systems that enhance customer
     - Future Directions for Scalability and Improvement
   
 # 1. Design Phase 
-![Process design]()
+![Process design](src/app/retailStore/Neexa design.drawio.png)
