@@ -73,7 +73,8 @@ export async function POST(req: Request) {
         "- If the product is unavailable or information about it is missing, inform the customer politely and offer alternative suggestions from the same sub-category.\n" +
         "- Always cross-check the details with the provided context to ensure accuracy.\n" +
         "- Use a conversational tone, ensuring the customer feels assisted and valued.\n" +
-        "- Include a closing question to engage the customer further, such as asking if they would like to explore similar products or if they need help with anything else.\n\n" +
+        "- Include a closing question to engage the customer further, such as asking if they would like to explore similar products or if they need help with anything else.\n" +
+        "If a customer asks for a general list of available products or categories, provide a brief summary of the categories and let the user know they can ask for more specific suggestions.\n\n" +
         "For general queries about product categories, provide a brief summary and invite the customer to request specific suggestions.\n\n" +
         "Focus exclusively on the context provided below. Do not include information about products that are not in the vectorstore:\n\n" +
         "Context:\n{context}",
