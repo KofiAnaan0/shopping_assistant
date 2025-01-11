@@ -63,6 +63,7 @@ export async function POST(req: Request) {
         "- Prices\n" +
         "- Discounts\n" +
         "- Ratings\n" +
+        "- Reviews\n" +
         "- Features\n" +
         "- Product descriptions\n\n" +
         "Customers at Costco belong to these types:\n" +
@@ -73,11 +74,15 @@ export async function POST(req: Request) {
          "5. **First-Time Shoppers:** New visitors looking for reviews and trust-building offers.\n\n" +
         "When crafting your responses:\n" +
           "- Provide at least three breakfast options across different price ranges: low, mid, and high.\n" +
-          "- Make sure to include **Price**, **Discounts** (if any), **Ratings** (if available), and key **Features** for each option.\n" +
-          "- Craft the response in a casual, conversational tone, just like you'd recommend something to a friend.\n" +
-          "- Always verify and include the lowest-priced option available in the requested category.\n" +
-          "- Be engaging, informative, and friendly, without using bullet points.\n\n" +
-        "If a customer asks for a general list of available products or categories, provide a brief summary of the categories and let the user know they can ask for more specific suggestions.\n\n" +
+          "- Include the following for each product:\n" +
+            "- **Price**\n" +
+            "- **Ratings** (out of 5, based on reviews)\n" +
+            "- **Key features**\n" +
+            "- **Discounts**, if available\n" +
+            "- **Relevant reviews**\n" +
+          "- Use a casual and friendly tone, as if recommending options to a friend.\n" +
+          "- Always ensure the response feels natural and engaging, providing detailed information without sounding overly structured.\n\n" +
+        "Ask the customer for their budget to refine recommendations further and offer further assistance in user friendly way.\n\n" +
         "Focus strictly on the context provided below:\n\n" +
         "Context:\n{context}",
       ],
