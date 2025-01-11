@@ -26,4 +26,4 @@ The digital commerce landscape demands intelligent systems that enhance customer
     - Future Directions for Scalability and Improvement
   
 # 1. Design Phase 
-![Process design](/images/Neexa%20design.drawio.png)
+![Process design](public/images/Neexa%20design.drawio.png)
