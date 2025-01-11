@@ -128,23 +128,23 @@ export function ChatMessage({ message: { role, content } }: ChatMessageProps) {
       >
         <ReactMarkdown
           components={{
-            a: ({ node, ref, ...props }) => (
+            a: ({ props }) => (
               <Link
                 {...props}
                 href={props.href ?? ""}
                 className="text-primary hover:underline"
               />
             ),
-            p: ({ node, ...props }) => (
+            p: ({ props }) => (
               <p {...props} className="mt-3 first:mt-0" />
             ),
-            ul: ({ node, ...props }) => (
+            ul: ({ props }) => (
               <ul
                 {...props}
                 className="mt-3 list-inside list-disc first:mt-0"
               />
             ),
-            li: ({ node, ...props }) => (
+            li: ({ props }) => (
               <li {...props} className="mt-1 first:mt-1" />
             ),
           }}
