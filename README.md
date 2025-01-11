@@ -32,7 +32,7 @@ The digital commerce landscape demands intelligent systems that enhance customer
 The design process consists of the following steps:
 
 1. **Dataset Preparation**:  
-   A CSV file containing product data from Costco's online marketplace is used as the dataset find it here [Dataset](https://www.kaggle.com/datasets/bhavikjikadara/grocery-store-dataset). It includes 19 sub-categories, with each product having attributes    such as price, ratings, discounts, title, features, and product descriptions.
+   A CSV file containing product data from Costco's online marketplace is used as the dataset; find it here [Dataset](https://www.kaggle.com/datasets/bhavikjikadara/grocery-store-dataset). It includes 19 sub-categories, with each product having attributes    such as price, ratings, discounts, title, features, and product descriptions.
    
    This dataset is embedded into **Pinecone**, a vector database, using the **OpenAI text-embedding model** for efficient similarity search.  
 
