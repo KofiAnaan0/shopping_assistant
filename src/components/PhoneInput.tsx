@@ -23,7 +23,7 @@ const CustomPhoneInput: React.FC<PhoneInputProps> = ({ value, onChange }) => {
   };
 
   const handleInputChange = (phone: string) => {
-    onChange(phone), validatePhone(phone);
+    onChange(phone); validatePhone(phone);
   };
   return (
     <div className="w-full max-w-sm mx-auto">
