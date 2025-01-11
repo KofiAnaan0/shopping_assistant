@@ -1,4 +1,3 @@
-import AIChatBox from "@/components/AIChatBox";
 import UserData from "@/components/UserData";
 import { Metadata } from "next";
 
