@@ -6,7 +6,7 @@ The digital commerce landscape demands intelligent systems that enhance customer
 
 ## Table of Contents
 
-1. **Design Phase**
+[1. **Design Phase**](#1-Design-Phase)
    - Solution Architecture
    - Prompt Engineering
      
